@@ -154,17 +154,7 @@
         </div>
     </header>
 
-    <section class="catalog-above">
-        <div class="_container">
-            <div class="catalog-above__wrapper">
-                <h1 class="title catalog-above__title">
-                    Каталог продуктів
-                </h1>
-            </div>
-        </div>
-    </section>
-
-    <section class="catalog catalog__categories">
+    <section class="catalog">
         <div class="absolute-vegetable absolute-tomato wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
             <img src="./assets/img/absolute-tomato.png" alt="tomato">
         </div>
@@ -176,176 +166,198 @@
                             <span>
                                 <a href="№">Головна</a>
                                  - 
-                                 <span class="breadcrumb_last" aria-current="page">Каталог</span>
+                                 <span>
+                                    <a href="#">Каталог</a>
+                                     - 
+                                     <span class="breadcrumb_last" aria-current="page">Насіння кавуна</span>
+                                    </span></span>
                                 </span>
                             </span>
                     </nav>
+                    <div class="sort">
+                        <p>Сортувати:</p>
+                        <span class="sort__current"> за замовчуванням </span>
+                        <div class="sort__choise">
+                            <a href="#">За алфавітом А-Я</a>
+                            <a href="#">За алфавітом Я-А</a>
+                            <a href="#">За (Ціна) зростання</a>
+                            <a href="#">За (Ціна) спадання</a>
+                            <a href="#">За (Новинка) зростання</a>
+                            <a href="#">За (Новинка) спадання</a>
+                        </div>
+                    </div>
                 </div>
-                <ul class="catalog-list catalog-list__categories">
-                    <li class="assortment-card">
-                        <a href="#" class="assortment-card__link">
-                            <h5 class="assortment-card__title title">Насіння <span></span> кавуна</h5>
-                            <div class="assortment-card__img">
-                                <img src="./assets/img/product-1.png" alt="product-1">
-                            </div>
+                <ul class="catalog-list">
+                    <li class="catalog-list__item">
+                        <div class="catalog-list__img">
+                            <img src="./assets/img/product-1.png" alt="product">
+                        </div>
+                        <h5 class="title catalog-list__title">
+                            Насіння кавуна
+                        </h5>
+                        <a href="#" class="catalog-list__count">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path d="M24 0H0v24h24z" fill="none"></path>
+                                <path d="M17.66 7.93L12 2.27 6.34 7.93c-3.12 3.12-3.12 8.19 0 11.31C7.9 20.8 9.95 21.58 12 21.58c2.05 0 4.1-.78 5.66-2.34 3.12-3.12 3.12-8.19 0-11.31zM12 19.59c-1.6 0-3.11-.62-4.24-1.76C6.62 16.69 6 15.19 6 13.59s.62-3.11 1.76-4.24L12 5.1v14.49z"></path>
+                            </svg>
+                            <p>
+                                Кількість: 
+                                <span>100000</span>
+                                сем.
+                            </p>
                         </a>
-                        
+                        <div class="catalog-list__buy__wrapper">
+                            <p class="catalog-list__price">10 000 грн.</p>
+                            <button class="_btn catalog-list__btn">Купити</button>
+                        </div>
                     </li>
-                    <li class="assortment-card">
-                        <a href="#" class="assortment-card__link">
-                            <h5 class="assortment-card__title title">Насіння <span></span> баклажана</h5>
-                            <div class="assortment-card__img">
-                                <img src="./assets/img/product-2.png" alt="product-2">
-                            </div>
+                    <li class="catalog-list__item">
+                        <div class="catalog-list__img">
+                            <img src="./assets/img/product-1.png" alt="product">
+                        </div>
+                        <h5 class="title catalog-list__title">
+                            Насіння кавуна
+                        </h5>
+                        <a href="#" class="catalog-list__count">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path d="M24 0H0v24h24z" fill="none"></path>
+                                <path d="M17.66 7.93L12 2.27 6.34 7.93c-3.12 3.12-3.12 8.19 0 11.31C7.9 20.8 9.95 21.58 12 21.58c2.05 0 4.1-.78 5.66-2.34 3.12-3.12 3.12-8.19 0-11.31zM12 19.59c-1.6 0-3.11-.62-4.24-1.76C6.62 16.69 6 15.19 6 13.59s.62-3.11 1.76-4.24L12 5.1v14.49z"></path>
+                            </svg>
+                            <p>
+                                Кількість: 
+                                <span>100000</span>
+                                сем.
+                            </p>
                         </a>
-                        
+                        <div class="catalog-list__buy__wrapper">
+                            <p class="catalog-list__price">10 000 грн.</p>
+                            <button class="_btn catalog-list__btn">Купити</button>
+                        </div>
                     </li>
-                    <li class="assortment-card">
-                        <a href="#" class="assortment-card__link">
-                            <h5 class="assortment-card__title title">Насіння <span></span> гороху</h5>
-                            <div class="assortment-card__img">
-                                <img src="./assets/img/product-3.png" alt="product-3">
-                            </div>
+                    <li class="catalog-list__item">
+                        <div class="catalog-list__img">
+                            <img src="./assets/img/product-1.png" alt="product">
+                        </div>
+                        <h5 class="title catalog-list__title">
+                            Насіння кавуна
+                        </h5>
+                        <a href="#" class="catalog-list__count">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path d="M24 0H0v24h24z" fill="none"></path>
+                                <path d="M17.66 7.93L12 2.27 6.34 7.93c-3.12 3.12-3.12 8.19 0 11.31C7.9 20.8 9.95 21.58 12 21.58c2.05 0 4.1-.78 5.66-2.34 3.12-3.12 3.12-8.19 0-11.31zM12 19.59c-1.6 0-3.11-.62-4.24-1.76C6.62 16.69 6 15.19 6 13.59s.62-3.11 1.76-4.24L12 5.1v14.49z"></path>
+                            </svg>
+                            <p>
+                                Кількість: 
+                                <span>100000</span>
+                                сем.
+                            </p>
                         </a>
-                        
+                        <div class="catalog-list__buy__wrapper">
+                            <p class="catalog-list__price">10 000 грн.</p>
+                            <button class="_btn catalog-list__btn">Купити</button>
+                        </div>
                     </li>
-                    <li class="assortment-card">
-                        <a href="#" class="assortment-card__link">
-                            <h5 class="assortment-card__title title">Насіння <span></span> дині</h5>
-                            <div class="assortment-card__img">
-                                <img src="./assets/img/product-4.png" alt="product-4">
-                            </div>
+                    <li class="catalog-list__item">
+                        <div class="catalog-list__img">
+                            <img src="./assets/img/product-1.png" alt="product">
+                        </div>
+                        <h5 class="title catalog-list__title">
+                            Насіння кавуна
+                        </h5>
+                        <a href="#" class="catalog-list__count">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path d="M24 0H0v24h24z" fill="none"></path>
+                                <path d="M17.66 7.93L12 2.27 6.34 7.93c-3.12 3.12-3.12 8.19 0 11.31C7.9 20.8 9.95 21.58 12 21.58c2.05 0 4.1-.78 5.66-2.34 3.12-3.12 3.12-8.19 0-11.31zM12 19.59c-1.6 0-3.11-.62-4.24-1.76C6.62 16.69 6 15.19 6 13.59s.62-3.11 1.76-4.24L12 5.1v14.49z"></path>
+                            </svg>
+                            <p>
+                                Кількість: 
+                                <span>100000</span>
+                                сем.
+                            </p>
                         </a>
-                        
+                        <div class="catalog-list__buy__wrapper">
+                            <p class="catalog-list__price">10 000 грн.</p>
+                            <button class="_btn catalog-list__btn">Купити</button>
+                        </div>
                     </li>
-                    <li class="assortment-card">
-                        <a href="#" class="assortment-card__link">
-                            <h5 class="assortment-card__title title">Насіння <span></span> кабачка</h5>
-                            <div class="assortment-card__img">
-                                <img src="./assets/img/product-5.png" alt="product-5">
-                            </div>
+                    <li class="catalog-list__item">
+                        <div class="catalog-list__img">
+                            <img src="./assets/img/product-1.png" alt="product">
+                        </div>
+                        <h5 class="title catalog-list__title">
+                            Насіння кавуна
+                        </h5>
+                        <a href="#" class="catalog-list__count">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path d="M24 0H0v24h24z" fill="none"></path>
+                                <path d="M17.66 7.93L12 2.27 6.34 7.93c-3.12 3.12-3.12 8.19 0 11.31C7.9 20.8 9.95 21.58 12 21.58c2.05 0 4.1-.78 5.66-2.34 3.12-3.12 3.12-8.19 0-11.31zM12 19.59c-1.6 0-3.11-.62-4.24-1.76C6.62 16.69 6 15.19 6 13.59s.62-3.11 1.76-4.24L12 5.1v14.49z"></path>
+                            </svg>
+                            <p>
+                                Кількість: 
+                                <span>100000</span>
+                                сем.
+                            </p>
                         </a>
-                        
+                        <div class="catalog-list__buy__wrapper">
+                            <p class="catalog-list__price">10 000 грн.</p>
+                            <button class="_btn catalog-list__btn">Купити</button>
+                        </div>
                     </li>
-                    <li class="assortment-card">
-                        <a href="#" class="assortment-card__link">
-                            <h5 class="assortment-card__title title">Насіння <span></span> капусти</h5>
-                            <div class="assortment-card__img">
-                                <img src="./assets/img/product-6.png" alt="product-6">
-                            </div>
+                    <li class="catalog-list__item">
+                        <div class="catalog-list__img">
+                            <img src="./assets/img/product-1.png" alt="product">
+                        </div>
+                        <h5 class="title catalog-list__title">
+                            Насіння кавуна
+                        </h5>
+                        <a href="#" class="catalog-list__count">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path d="M24 0H0v24h24z" fill="none"></path>
+                                <path d="M17.66 7.93L12 2.27 6.34 7.93c-3.12 3.12-3.12 8.19 0 11.31C7.9 20.8 9.95 21.58 12 21.58c2.05 0 4.1-.78 5.66-2.34 3.12-3.12 3.12-8.19 0-11.31zM12 19.59c-1.6 0-3.11-.62-4.24-1.76C6.62 16.69 6 15.19 6 13.59s.62-3.11 1.76-4.24L12 5.1v14.49z"></path>
+                            </svg>
+                            <p>
+                                Кількість: 
+                                <span>100000</span>
+                                сем.
+                            </p>
                         </a>
-                        
+                        <div class="catalog-list__buy__wrapper">
+                            <p class="catalog-list__price">10 000 грн.</p>
+                            <button class="_btn catalog-list__btn">Купити</button>
+                        </div>
                     </li>
-                    <li class="assortment-card">
-                        <a href="#" class="assortment-card__link">
-                            <h5 class="assortment-card__title title">Насіння <span></span> цукрової <span></span> кукурудзи</h5>
-                            <div class="assortment-card__img">
-                                <img src="./assets/img/product-7.png" alt="product-7">
-                            </div>
+                    <li class="catalog-list__item">
+                        <div class="catalog-list__img">
+                            <img src="./assets/img/product-1.png" alt="product">
+                        </div>
+                        <h5 class="title catalog-list__title">
+                            Насіння кавуна
+                        </h5>
+                        <a href="#" class="catalog-list__count">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path d="M24 0H0v24h24z" fill="none"></path>
+                                <path d="M17.66 7.93L12 2.27 6.34 7.93c-3.12 3.12-3.12 8.19 0 11.31C7.9 20.8 9.95 21.58 12 21.58c2.05 0 4.1-.78 5.66-2.34 3.12-3.12 3.12-8.19 0-11.31zM12 19.59c-1.6 0-3.11-.62-4.24-1.76C6.62 16.69 6 15.19 6 13.59s.62-3.11 1.76-4.24L12 5.1v14.49z"></path>
+                            </svg>
+                            <p>
+                                Кількість: 
+                                <span>100000</span>
+                                сем.
+                            </p>
                         </a>
-                        
-                    </li>
-                    <li class="assortment-card">
-                        <a href="#" class="assortment-card__link">
-                            <h5 class="assortment-card__title title">Насіння <span></span> цибулі</h5>
-                            <div class="assortment-card__img">
-                                <img src="./assets/img/product-8.png" alt="product-8">
-                            </div>
-                        </a>
-                        
-                    </li>
-                    <li class="assortment-card">
-                        <a href="#" class="assortment-card__link">
-                            <h5 class="assortment-card__title title">Насіння <span></span> моркви</h5>
-                            <div class="assortment-card__img">
-                                <img src="./assets/img/product-9.png" alt="product-9">
-                            </div>
-                        </a>
-                        
-                    </li>
-                    <li class="assortment-card">
-                        <a href="#" class="assortment-card__link">
-                            <h5 class="assortment-card__title title">Насіння <span></span> огірка</h5>
-                            <div class="assortment-card__img">
-                                <img src="./assets/img/product-10.png" alt="product-10">
-                            </div>
-                        </a>
-                        
-                    </li>
-                    <li class="assortment-card">
-                        <a href="#" class="assortment-card__link">
-                            <h5 class="assortment-card__title title">Насіння <span></span> перцю</h5>
-                            <div class="assortment-card__img">
-                                <img src="./assets/img/product-11.png" alt="product-11">
-                            </div>
-                        </a>
-                        
-                    </li>
-                    <li class="assortment-card">
-                        <a href="#" class="assortment-card__link">
-                            <h5 class="assortment-card__title title">Насіння <span></span> прянощів</h5>
-                            <div class="assortment-card__img">
-                                <img src="./assets/img/product-12.png" alt="product-12">
-                            </div>
-                        </a>
-                        
-                    </li>
-                    <li class="assortment-card">
-                        <a href="#" class="assortment-card__link">
-                            <h5 class="assortment-card__title title">Насіння <span></span> редиска</h5>
-                            <div class="assortment-card__img">
-                                <img src="./assets/img/product-13.png" alt="product-13">
-                            </div>
-                        </a>
-                        
-                    </li>
-                    <li class="assortment-card">
-                        <a href="#" class="assortment-card__link">
-                            <h5 class="assortment-card__title title">Насіння <span></span> салату</h5>
-                            <div class="assortment-card__img">
-                                <img src="./assets/img/product-14.png" alt="product-14">
-                            </div>
-                        </a>
-                        
-                    </li>
-                    <li class="assortment-card">
-                        <a href="#" class="assortment-card__link">
-                            <h5 class="assortment-card__title title">Насіння <span></span> буряка</h5>
-                            <div class="assortment-card__img">
-                                <img src="./assets/img/product-15.png" alt="product-15">
-                            </div>
-                        </a>
-                        
-                    </li>
-                    <li class="assortment-card">
-                        <a href="#" class="assortment-card__link">
-                            <h5 class="assortment-card__title title">Насіння <span></span> томату</h5>
-                            <div class="assortment-card__img">
-                                <img src="./assets/img/product-16.png" alt="product-16">
-                            </div>
-                        </a>
-                        
-                    </li>
-                    <li class="assortment-card">
-                        <a href="#" class="assortment-card__link">
-                            <h5 class="assortment-card__title title">Насіння <span></span> гарбуза</h5>
-                            <div class="assortment-card__img">
-                                <img src="./assets/img/product-17.png" alt="product-17">
-                            </div>
-                        </a>
-                        
-                    </li>
-                    <li class="assortment-card">
-                        <a href="#" class="assortment-card__link">
-                            <h5 class="assortment-card__title title">Насіння <span></span> мікрогрін</h5>
-                            <div class="assortment-card__img">
-                                <img src="./assets/img/product-18.png" alt="product-18">
-                            </div>
-                        </a>
-                        
+                        <div class="catalog-list__buy__wrapper">
+                            <p class="catalog-list__price">10 000 грн.</p>
+                            <button class="_btn catalog-list__btn">Купити</button>
+                        </div>
                     </li>
                 </ul>
 
+                <div class="wp-pagenavi" role="navigation"> 
+                    <a class="page smaller" title="Страница 1" href="#">1</a>
+                    <a class="page smaller" title="Страница 2" href="#">2</a>
+                    <span aria-current="page" class="current">3</span><a class="page larger" title="Страница 4" href="#">4</a>
+                    <a class="page larger" title="Страница 5" href="#">5</a>
+                    <a class="page larger" title="Страница 6" href="#">6</a>
+                </div>
 
             </div>
         </div>
@@ -354,7 +366,7 @@
 
     
 
-    <footer class="footer product-list__footer">
+    <footer class="footer">
         <div class="absolute-vegetable absolute-greenery-blur ">
             <img src="./assets/img/absolute-greenery-blur.png" alt="greenery-blur">
         </div>
