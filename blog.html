@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heritage-Блог</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <!-- <link rel="stylesheet" href="css/swiper-bundle.min.css"> -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <header class="header">
+        <div class="_container">
+            <div class="header__wrapper">
+                <div class="header__logo">
+                    <a href="#" class="custom-logo">
+                        <img src="./assets/img/logo.png" alt="logo">
+                    </a>
+                </div>
+                <nav class="menu">
+                    <div class="menu__box">
+                        <div class="header__logo__mob">
+                            <a href="#" class="custom-logo-link">
+                                <img src="./assets/img/logo.png" alt="logo" class="logo">
+                            </a>
+                        </div>
+
+                        <ul class="menu__list">
+                            <li>
+                                <a href="#" data-goto=".main" class="menu__item menu__link">
+                                    Головна
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" data-goto=".main" class="menu__item menu__link">
+                                    Каталог
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" data-goto=".main" class="menu__item menu__link">
+                                    Про нас
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" data-goto=".main" class="menu__item menu__link">
+                                    Блог
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" data-goto=".main" class="menu__item menu__link">
+                                    Фотогалерея
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" data-goto=".main" class="menu__item menu__link">
+                                    Контакти
+                                </a>
+                            </li>
+                        </ul>
+
+                        <div class="menu__call__container">
+                            <a href="tel:+380672664367" class="menu__call">
+                                <svg  viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.49517 2.43627C1.65333 2.17439 2.52475 1.22188 3.14661 1.25064C3.3325 1.26604 3.49682 1.37849 3.63033 1.50892C3.9369 1.80828 4.81448 2.94051 4.86429 3.17876C4.98548 3.76311 4.28916 4.09995 4.50227 4.68891C5.04556 6.01832 5.98169 6.9544 7.31167 7.49715C7.90015 7.71024 8.23701 7.01396 8.82139 7.13566C9.05914 7.18546 10.1919 8.06301 10.4913 8.36955C10.6212 8.50255 10.7342 8.66737 10.7496 8.85325C10.7727 9.50794 9.76111 10.3916 9.56392 10.5046C9.09868 10.8373 8.49171 10.8317 7.75175 10.4877C5.68693 9.62861 2.38713 6.39111 1.51211 4.24835C1.1773 3.51253 1.1542 2.90148 1.49517 2.43627Z" stroke="#2F3132" stroke-opacity="0.72" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                +380672664367
+                            </a>
+                            <button class="_btn menu__call__btn">
+                                <span>Звортній дзвінок</span>
+                            </button>
+                        </div>
+
+                        <ul class="menu__lang_mob">
+                            <li class="lang-item lang-item-2 lang-item-ua current-lang lang-item-first">
+                                <a lang="ua" hreflang="ua" href="#" >
+                                    <div class="menu__lang__img">
+                                        <img src="./assets/img/label-flag-ukraine.png" alt="ua">
+                                    </div>
+                                    
+                                </a>
+                            </li>
+                            <li class="lang-item lang-item-5 lang-item-en lang-item-second">
+                                <a lang="en-US" hreflang="en-US" href="#">
+                                    <div class="menu__lang__img">
+                                        <img src="./assets/img/label-flag-ukraine.png" alt="ua">
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="lang-item lang-item-5 lang-item-rum lang-item-third">
+                                <a lang="rum-RON" hreflang="rum-RON" href="#">
+                                    <div class="menu__lang__img">
+                                        <img src="./assets/img/label-flag-ukraine.png" alt="ua">
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="#" class="menu__cart">
+                        <svg  viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.7677 8.36101H13.0743C13.424 8.36101 13.6988 8.07187 13.6988 7.7232C13.6988 7.36602 13.424 7.08538 13.0743 7.08538H10.7677C10.418 7.08538 10.1432 7.36602 10.1432 7.7232C10.1432 8.07187 10.418 8.36101 10.7677 8.36101ZM15.8138 3.93966C16.3217 3.93966 16.6548 4.11825 16.9879 4.50944C17.321 4.90064 17.3792 5.46192 17.3043 5.97132L16.5133 11.5501C16.3634 12.6225 15.4641 13.4125 14.4066 13.4125H5.32198C4.21451 13.4125 3.29856 12.546 3.20696 11.4234L2.44089 2.15292L1.18354 1.93181C0.850465 1.87228 0.617313 1.54061 0.675601 1.20044C0.733889 0.852619 1.05864 0.622154 1.40004 0.67403L3.38599 0.979332C3.6691 1.03121 3.87727 1.26848 3.90225 1.55762L4.06046 3.46257C4.08544 3.73556 4.30194 3.93966 4.5684 3.93966H15.8138ZM5.18858 14.7566C4.48913 14.7566 3.9229 15.3349 3.9229 16.0493C3.9229 16.7551 4.48913 17.3334 5.18858 17.3334C5.87971 17.3334 6.44594 16.7551 6.44594 16.0493C6.44594 15.3349 5.87971 14.7566 5.18858 14.7566ZM14.5563 14.7566C13.8568 14.7566 13.2906 15.3349 13.2906 16.0493C13.2906 16.7551 13.8568 17.3334 14.5563 17.3334C15.2474 17.3334 15.8136 16.7551 15.8136 16.0493C15.8136 15.3349 15.2474 14.7566 14.5563 14.7566Z" fill="#2F3132"/>
+                        </svg>
+                        <span class="cart-count">1</span>
+                    </a>
+                    <ul class="menu__lang">
+                        <li>
+                            <a href="#">
+                                <div class="menu__lang__img">
+                                    <img src="./assets/img/label-flag-ukraine.png" alt="ua">
+                                </div>
+                                <svg  viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.91665 0.541748L3.99998 3.45841L1.08331 0.541748" stroke="#2F3132" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+
+                            <ul>
+                                <li class="lang-item lang-item-5 lang-item-en lang-item-first">
+                                    <a lang="en-US" hreflang="en-US" href="#1">
+                                        <div class="menu__lang__img">
+                                            <img src="./assets/img/label-flag-ukraine.png" alt="ua">
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="lang-item lang-item-5 lang-item-rum lang-item-second">
+                                    <!-- <a lang="en-US" hreflang="en-US" href="#1" >
+                                        ua
+                                    </a> -->
+                                    <a lang="rum-RON" hreflang="rum-RON" href="#2">
+                                        <div class="menu__lang__img">
+                                            <img src="./assets/img/label-flag-ukraine.png" alt="ua">
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <div class="menu__toggle">
+                        <span></span>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    
+
+    <section class="blog-header">
+        <div class="_container">
+            <nav class="yoast-breadcrumbs breadcrumbs">
+                <span><span>
+                <a href="#">Головна</a>
+                 - 
+                <span>
+                    <a href="#">Каталог</a>
+                     - 
+                     <span class="breadcrumb_last" aria-current="page">Цибуля HVS 1521 (Халк / Hulk)</span>
+                    </span></span>
+                </span>
+            </nav>
+            <div class="blog-header__wrapper">
+                <h2 class="blog-header__title title">Технологія вирощування томату в умовах захищеного грунту</h2>
+                <a href="#" class="blog-header__author">Алексей Свиридов</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="blog-titles">
+        <div class="absolute-vegetable absolute-tomato wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
+            <img src="./assets/img/absolute-tomato.png" alt="tomato">
+        </div>
+        <div class="_container">
+            <div class="blog-titles__wrapper _blog-main-wrapper">
+                <a href="#" class="blog-titles__calendar">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.31934 6.0531H14.6873" stroke="#2F3132" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M11.3317 8.9823H11.3387" stroke="#2F3132" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8.00359 8.9823H8.01054" stroke="#2F3132" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M4.66863 8.9823H4.67558" stroke="#2F3132" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M11.3317 11.8971H11.3387" stroke="#2F3132" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8.00359 11.8971H8.01054" stroke="#2F3132" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M4.66863 11.8971H4.67558" stroke="#2F3132" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M11.0329 0.5V2.96809" stroke="#2F3132" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M4.97435 0.5V2.96809" stroke="#2F3132" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.1787 1.68433H4.82822C2.6257 1.68433 1.25 2.91128 1.25 5.1666V11.9538C1.25 14.2446 2.6257 15.4999 4.82822 15.4999H11.1718C13.3812 15.4999 14.75 14.2659 14.75 12.0106V5.1666C14.7569 2.91128 13.3882 1.68433 11.1787 1.68433Z" stroke="#2F3132" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span >Новина опублікована: 07.10.2020</span>
+                </a>
+                <ul class="blog-titles__list">
+                    <li>
+                        <a href="#" data-goto=".article-1" class="blog-titles__link">1. Технологія вирощування томату в умовах захищеного грунту</a>
+                    </li>
+                    <li>
+                        <a href="#" data-goto=".article-2" class="blog-titles__link">2. Посадка</a>
+                    </li>
+                    <li>
+                        <a href="#" data-goto=".article-3" class="blog-titles__link">3. Технологічні операції по догляду за рослинами</a>
+                    </li>
+                    <li>
+                        <a href="#" data-goto=".article-4" class="blog-titles__link">4. Збагачення С02</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="blog-article article-1 wow fadeInUp" data-wow-duration=".3s" data-wow-delay=".0s">
+        <div class="_container">
+            <div class="blog-article__wrapper _blog-main-wrapper">
+                <h3>
+                    Технологія вирощування томату в умовах захищеного грунту
+                </h3>
+                <p>
+                    Томат дуже теплолюбний. Насіння починають 
+                    проростати при температурі 10-15°С, але оптимальна 
+                    температура для проростання 22-25°С. При зниженні 
+                    температури до 13-15°С у рослин не розкриваються 
+                    бутони й обпадає зав’язь, а при 10°С ріст рослин 
+                    припиняється. При 5°С гинуть квітки й плоди. 
+                    Легкий заморозок (мінус 1-2°С) є згубним 
+                    для рослин томату.
+
+                </p>
+                <p>
+                    Підвищена температура також є несприятливою: при температурі 
+                    вище +32°С пилкові зерна не проростають, уповільнюється 
+                    процес фотосинтезу, плоди залишаються блідими.
+
+
+                </p>
+                <p>
+                    Томат - світлолюбна рослина короткого дня добре розвивається 
+                    при інтенсивному сонячному освітленні.
+                </p>
+                <p>
+                    При недоліку світла вуглекислота повітря засвоюється повільно, 
+                    ріст і розвиток рослин уповільнюються. Дуже вимогливими 
+                    до інтенсивності освітлення є сходи томату і розсада. 
+                    Інтенсивність освітлення впливає також на порядок закладки 
+                    китиць і листя томату. 
+
+                </p>
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="blog-article article-2 wow fadeInUp" data-wow-duration=".3s" data-wow-delay=".0s">
+        <div class="absolute-vegetable absolute-greenery wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
+            <img src="./assets/img/absolute-greenery.png" alt="greenery">
+        </div>
+        <div class="_container">
+            <div class="blog-article__wrapper _blog-main-wrapper">
+                <h3>
+                    Посадка
+                </h3>
+                <p>
+                    Нормальна розсада перед пересадженням повинна 
+                    бути збалансованою з точки зору вегетативно- 
+                    генеративного розвитку й мати наступні загальні 
+                    характеристиками: під першою квітковою китицею повинно 
+                    бути 9-10 листків; міжвузля повинно бути правильно 
+                    розташоване (середня довжина - 5-7 см, 
+                    у залежності від гібрида); стебло рослини не повинно 
+                    бути занадто товстим або занадто тонким. 
+
+                </p>
+                <p>
+                    Для напівдетермінантних гібридів не слід допускати 
+                    утворення квітучої китиці на розсаді, що висаджується, 
+                    а висаджувати тільки лише рослини без квітучих китиць. 
+                    Якщо немає можливості уникнути цього, то необхідно 
+                    зробити обрізку перших китиць, інакше може відбутися 
+                    ухил у бік занадто сильного генеративного розвитку рослини.  
+                </p>
+                <strong>
+                    <img src="./assets/img/blog/img-blog-article.png" alt="blog-article-img">
+                </strong>
+                <p>
+                    Висаджують розсаду на постійне місце вертикально, 
+                    уникаючи засипання стебла. Існує декілька способів 
+                    розміщення рослин томату в теплицях. Найбільш 
+                    розповсюджений для індетермінантних гібридів - 
+                    дворядковий: (90-100)+(60-70)х(50-55) см, тобто 
+                    відстань між рядами рослин 60-70 см, між доріжками 
+                    90-100 см. Густота стояння для ранньостиглих гібридів 
+                    2,4 рослин/м2, для основних посадок - 2,5 рослин/м2, 
+                    розсаду висаджують шаховому порядку. Напівдетермінантні 
+                    гібриди розміщують з більшим загущенням - 2.6-3 р/м2 
+                    (при вирощуванні в 1 стебло). 
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="blog-article article-3 wow fadeInUp" data-wow-duration=".3s" data-wow-delay=".0s"">
+        <div class="absolute-vegetable absolute-greenery-blur wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
+            <img src="./assets/img/absolute-greenery-blur.png" alt="greenery-blur">
+        </div>
+        <div class="_container">
+            <div class="blog-article__wrapper _blog-main-wrapper">
+                <h3>
+                    Технологічні операції по догляду за рослинами
+                </h3>
+                <p>
+                    Після посадки проводять полив (2-3 л/ м2).Температурний 
+                    режим коректують залежно від рівня освітлення. У 
+                    похмурі дні в теплиці необхідно підтримувати температуру 
+                    повітря на рівні 20°С вдень і 17°С - уночі, у сонячні 
+                    дні - 22°С і 18°С відповідно. Через 2-3 дні рослини 
+                    підв’язують до вертикально натягнутого шпагату й повторюють 
+                    цю операцію раз на тиждень.
+                </p>
+                <ul>
+                    <li>полив (2-3 л/ м2)</li>
+                    <li>повітря на рівні 20°С вдень і 17°С - уночі</li>
+                    <li>у сонячні дні - 22°С і 18°С відповідно</li>
+                </ul>
+                <p>
+                    Після посадки проводять полив (2-3 л/ м2).Температурний 
+                    режим коректують залежно від рівня освітлення. У похмурі 
+                    дні в теплиці необхідно підтримувати температуру повітря 
+                    на рівні 20°С вдень і 17°С - уночі, у сонячні дні - 22°С 
+                    і 18°С відповідно. Через 2-3 дні рослини підв’язують 
+                    до вертикально натягнутого шпагату й повторюють цю 
+                    операцію раз на тиждень.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="blog-article article-4 wow fadeInUp" data-wow-duration=".3s" data-wow-delay=".0s"">
+        <div class="absolute-vegetable absolute-corn wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
+            <img src="./assets/img/absolute-corn.png" alt="corn">
+        </div>
+        <div class="_container">
+            <div class="blog-article__wrapper _blog-main-wrapper">
+                <h3>
+                    Збагачення С02
+                </h3>
+                <p>
+                    Концентрація С02 у навколишній атмосфері звичайно 
+                    становить приблизно 340 частин на мільйон. Під час 
+                    відсутності вентиляції нормальна концентрація двоокису 
+                    вуглецю в теплиці буде знижуватися внаслідок поглинання 
+                    її рослинами крізь устячка. С02 також виді ляється 
+                    органічним матеріалом ґрунту, але у недостатніх для 
+                    рослини кількостях. Занадто низька концентрація С02 
+                    у теплиці буде призводити  до переривчастого росту.
+                </p>
+                <p>
+                    Посилення  вентиляції дозволить підвищити концентрацію С02. 
+                    Найбільша потреба в С02 спостерігається під час високої 
+                    сонячної радіації. По можливості, проводьте вентиляцію щодня; 
+                    крім збільшення концентрації С02 знижується відносна вологість повітря.
+                </p>
+            </div>
+        </div>
+    </section>
+    
+
+    <footer class="footer">
+        
+        <div class="_container">
+            <div class="contact-us__container wow fadeInUpBig" data-wow-duration=".6s" data-wow-delay=".0s">
+                <div class="contact-us">
+                    <div class="contact-us__wrapper">
+                        <h2 class="contact-us__title title">
+                            Залишилися питання?
+                        </h2>
+                        <p class="contact-us__subtitle">
+                            Ми твердо віримо в те, що спробувавши насіння
+                        </p>
+                        <button class="_btn contact-us__btn">
+                            Зв'язатися з нами
+                            <svg viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.8125 5.79431L1.5625 5.79431" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M8.27515 1.27599L12.8126 5.79399L8.27515 10.3127" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="footer__wrapper">
+                <h4 class="footer__accordion__title">Насіння</h4>
+                <div class="footer__main__content">
+                    
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#">Насіння кавуна</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#">Насіння баклажана</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#">Насіння гороху</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#">Насіння дині</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#">Насіння кабачка</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#">Насіння капусти</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#">Насіння цукрової кукурудзи</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#">Насіння цибулі</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#">Насіння моркви</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#">Насіння огірка</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#">Насіння перцю</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#">Насіння прянощів</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#">Насіння редиски</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#">Насіння салату</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#">Насіння буряка</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#">Насіння томату</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#">Насіння гарбуза</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <h4 class="footer__accordion__title">Контакти</h4>
+                <div class="footer__contacts contacts">
+                    <div class="contacts__text">
+                        <ul class="contacts__list">
+                            <li class="contacts__item">
+                                <p class="contacts__nomination">Телефон:</p>
+                                <a href="tel:+380672664367" class="contacts__info">+380672664367</a>
+                            </li>
+                            <li class="contacts__item">
+                                <p class="contacts__nomination">Адреса:</p>
+                                <a href="https://goo.gl/maps/YLD3nxssc74HqTD4A" class="contacts__info">Hitec Products, Inc. (HPI) 4 Lomar Park Pepperell, MA 01463</a>
+                            </li>
+                            <li class="contacts__item">
+                                <p class="contacts__nomination">E-mail:</p>
+                                <a href="mailto:aleksvilk@gmail.com" class="contacts__info">aleksvilk@gmail.com</a>
+                            </li>
+                        </ul>
+
+                        <div class="footer__copyright">
+                            <p>© 2022 Heritage vegetable seeds</p>
+                        </div>
+                    </div>
+                    <div class="contacts__map__container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1233.3126911090073!2d-71.56810284903527!3d42.67558945466912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e3eac31ba1e28f%3A0xded3aa66f2cca5d8!2sHitec%20Products%20Inc!5e0!3m2!1sru!2sua!4v1652941426460!5m2!1sru!2sua" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+
+                <div class="footer__copyright__mob">
+                    <p>© 2022 Heritage vegetable seeds</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- <script src="js/swiper.min.js"></script> -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="./css/animate.css">
+    <script src="js/wow.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
