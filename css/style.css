@@ -303,6 +303,36 @@ input::placeholder, select::placeholder {
   max-width: 70px;
   cursor: pointer;
 }
+.custom-logo-link.custom-logo-link__mob {
+  max-width: 210px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #2F3132;
+}
+@media screen and (max-width: 829px) {
+  .custom-logo-link.custom-logo-link__mob {
+    max-width: 240px;
+  }
+}
+.custom-logo-link.custom-logo-link__mob p {
+  font-size: 14px;
+  font-family: "Monotype Corsiva", serif;
+  cursor: pointer;
+}
+@media screen and (max-width: 829px) {
+  .custom-logo-link.custom-logo-link__mob p {
+    font-size: 16px;
+  }
+}
+.custom-logo-link.custom-logo-link__mob .logo {
+  width: 70px;
+  height: auto;
+  margin-right: 15px;
+}
 
 .logo {
   width: 100%;
@@ -333,6 +363,15 @@ input::placeholder, select::placeholder {
   ._title__wrapper h2 {
     margin: 0 0 10px;
   }
+}
+
+.impulse a {
+  color: #C39F4B;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.impulse a:hover {
+  text-decoration: underline;
 }
 
 .absolute-vegetable {
@@ -482,8 +521,8 @@ input::placeholder, select::placeholder {
     display: block;
     width: 100%;
     border-bottom: 1px solid #C39F4B;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
+    margin-bottom: 30px;
+    padding-bottom: 27px;
   }
 }
 
@@ -607,7 +646,7 @@ input::placeholder, select::placeholder {
   .menu__box {
     position: fixed;
     z-index: 9;
-    width: 32%;
+    width: 38%;
     height: 100%;
     top: 0;
     right: -100%;
@@ -660,8 +699,8 @@ input::placeholder, select::placeholder {
             align-items: flex-start;
     width: 100%;
     border-bottom: 1px solid #C39F4B;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
   }
   .menu__list li:last-child a {
     margin-bottom: 0;
@@ -680,13 +719,13 @@ input::placeholder, select::placeholder {
 }
 @media screen and (max-width: 1020px) {
   .menu__item {
-    font-size: 18px;
+    font-size: 27px;
     margin: 0 0 25px 0;
   }
 }
 @media screen and (max-width: 829px) {
   .menu__item {
-    font-size: 20px;
+    font-size: 33px;
     margin: 0 0 35px 0;
   }
 }
@@ -709,8 +748,8 @@ input::placeholder, select::placeholder {
             align-items: flex-start;
     width: 100%;
     border-bottom: 1px solid #C39F4B;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
   }
 }
 .menu__call {
@@ -732,7 +771,12 @@ input::placeholder, select::placeholder {
 @media screen and (max-width: 1020px) {
   .menu__call {
     margin: 0 0 20px 0;
-    font-size: 16px;
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 829px) {
+  .menu__call {
+    font-size: 23px;
   }
 }
 .menu__call svg {
@@ -742,8 +786,14 @@ input::placeholder, select::placeholder {
 }
 @media screen and (max-width: 1020px) {
   .menu__call svg {
-    width: 16px;
-    height: 16px;
+    width: 18px;
+    height: 18px;
+  }
+}
+@media screen and (max-width: 829px) {
+  .menu__call svg {
+    width: 23px;
+    height: 23px;
   }
 }
 .menu__call:hover {
@@ -762,9 +812,45 @@ input::placeholder, select::placeholder {
   transition: all 0.1s ease;
   stroke: #C39F4B;
 }
+.menu__call.menu__call__mob {
+  display: none;
+}
+@media screen and (max-width: 1020px) {
+  .menu__call.menu__call__mob {
+    display: block;
+    margin: 0 35px 0 0;
+  }
+  .menu__call.menu__call__mob svg {
+    width: 18px;
+    height: 18px;
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 770px) {
+  .menu__call.menu__call__mob {
+    margin-right: 15px;
+  }
+}
+@media screen and (max-width: 1020px) {
+  .menu__call__btn {
+    width: 183px;
+    height: 33px;
+  }
+}
+@media screen and (max-width: 829px) {
+  .menu__call__btn {
+    width: 210px;
+    height: 33px;
+  }
+}
 @media screen and (max-width: 1020px) {
   .menu__call__btn span {
-    font-size: 14px;
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 829px) {
+  .menu__call__btn span {
+    font-size: 20px;
   }
 }
 .menu__cart {
@@ -777,6 +863,11 @@ input::placeholder, select::placeholder {
 @media screen and (max-width: 1020px) {
   .menu__cart {
     margin-right: 35px;
+  }
+}
+@media screen and (max-width: 770px) {
+  .menu__cart {
+    margin-right: 25px;
   }
 }
 .menu__cart svg {
@@ -884,7 +975,7 @@ input::placeholder, select::placeholder {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    max-width: 80px;
+    max-width: 110px;
     width: 100%;
   }
 }
@@ -899,8 +990,8 @@ input::placeholder, select::placeholder {
 }
 .menu__lang_mob .lang-item .menu__lang__img {
   display: block;
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
   overflow: hidden;
   border-radius: 50%;
   border: 1px solid transparent;
@@ -941,7 +1032,12 @@ input::placeholder, select::placeholder {
 }
 @media screen and (max-width: 490px) {
   .main {
-    background-position: 10% 0px;
+    background-position: 24% 0px;
+  }
+}
+@media screen and (max-width: 370px) {
+  .main {
+    background-position: 36% 0px;
   }
 }
 .main__wrapper {
@@ -1080,6 +1176,9 @@ input::placeholder, select::placeholder {
     max-width: unset;
     width: 465px;
     margin: 0 0 40px 0;
+  }
+  .benefits__item:last-child {
+    margin-bottom: 0;
   }
   .benefits__item span {
     display: none;
@@ -1697,6 +1796,12 @@ input::placeholder, select::placeholder {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+@media screen and (max-width: 610px) {
+  .blog-mini-content h3.blog-mini-content__title {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
 .blog-mini-content__title {
   cursor: pointer;
   margin-bottom: 5px;
@@ -1709,6 +1814,12 @@ input::placeholder, select::placeholder {
   font-weight: 300;
   font-size: 14px;
   line-height: 24px;
+}
+@media screen and (max-width: 610px) {
+  .blog-mini-content__subtitle {
+    font-size: 13px;
+    line-height: 20px;
+  }
 }
 
 .blog-articles {
@@ -2048,11 +2159,9 @@ input::placeholder, select::placeholder {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  margin-left: 30px;
   margin-bottom: 30px;
 }
 .catalog-list.catalog-list__categories {
-  margin-left: 17px;
   margin-bottom: 0;
 }
 .catalog-list .assortment-card {
@@ -3575,6 +3684,9 @@ input::placeholder, select::placeholder {
   font-size: 14px;
   line-height: 159.84%;
 }
+.footer__copyright p:first-child {
+  margin-bottom: 10px;
+}
 @media screen and (max-width: 770px) {
   .footer__copyright {
     display: none;
@@ -3585,10 +3697,26 @@ input::placeholder, select::placeholder {
 }
 @media screen and (max-width: 770px) {
   .footer__copyright__mob {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     font-weight: 400;
     font-size: 14px;
     line-height: 159.84%;
+  }
+  .footer__copyright__mob p:first-child {
+    margin-right: 25px;
+  }
+}
+@media screen and (max-width: 545px) {
+  .footer__copyright__mob {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer__copyright__mob p:first-child {
+    margin-right: 0px;
   }
 }
 

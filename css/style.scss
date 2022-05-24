@@ -337,6 +337,31 @@ h4.title{
     display: block;
     max-width: 70px;
     cursor: pointer;
+
+    &.custom-logo-link__mob{
+        max-width: 210px;
+        display: flex;
+        align-items: center;
+        color: $black;
+
+        @media screen and (max-width: 829px){
+            max-width: 240px;
+        }
+        
+        p{
+            font-size: 14px;
+            font-family: $dop;
+            cursor: pointer;
+            @media screen and (max-width: 829px){
+                font-size: 16px;
+            }
+        }
+        .logo{
+            width: 70px;
+            height: auto;
+            margin-right: 15px;
+        }
+    }
 }
 .logo {
     width: 100%;
@@ -357,6 +382,16 @@ h4.title{
 
         h2{
             margin: 0 0 10px;
+        }
+    }
+}
+
+.impulse{
+    a{
+        color: $brown;
+        transition: all .3s ease;
+        &:hover{
+            text-decoration: underline;
         }
     }
 }
@@ -496,8 +531,8 @@ h4.title{
             width: 100%;
 
             border-bottom: 1px solid $brown;
-            margin-bottom: 20px;
-            padding-bottom: 20px;
+            margin-bottom: 30px;
+            padding-bottom: 27px;
         }
     }
 
@@ -600,7 +635,7 @@ h4.title{
         @media screen and (max-width: 1020px) {
             position: fixed;
             z-index: 9;
-            width: 32%;
+            width: 38%;
             height: 100%;
             top: 0;
             right: -100%;
@@ -636,8 +671,8 @@ h4.title{
             width: 100%;
 
             border-bottom: 1px solid $brown;
-            margin-bottom: 20px;
-            padding-bottom: 20px;
+            margin-bottom: 30px;
+            padding-bottom: 30px;
 
             li{
                 &:last-child{
@@ -662,13 +697,13 @@ h4.title{
         }
 
         @media screen and (max-width: 1020px){
-            font-size: 18px;
+            font-size: 27px;
             margin: 0 0 25px 0;
 
             
         }
         @media screen and (max-width: 829px){
-            font-size: 20px;
+            font-size: 33px;
             margin: 0 0 35px 0;
         }
     }
@@ -688,8 +723,8 @@ h4.title{
 
             width: 100%;
             border-bottom: 1px solid $brown;
-            margin-bottom: 20px;
-            padding-bottom: 20px;
+            margin-bottom: 30px;
+            padding-bottom: 30px;
             
         }
 
@@ -709,7 +744,10 @@ h4.title{
 
         @media screen and (max-width: 1020px){
             margin: 0 0 20px 0;
-            font-size: 16px;
+            font-size: 18px;
+        }
+        @media screen and (max-width: 829px){
+            font-size: 23px;
         }
 
         svg{
@@ -718,8 +756,12 @@ h4.title{
             margin-right: 6px;
 
             @media screen and (max-width: 1020px){
-                width: 16px;
-                height: 16px;
+                width: 18px;
+                height: 18px;
+            }
+            @media screen and (max-width: 829px){
+                width: 23px;
+                height: 23px;
             }
 
         }
@@ -740,13 +782,42 @@ h4.title{
             }
         }
 
+        &.menu__call__mob{
+            display: none;
+            @media screen and (max-width: 1020px) {
+                display: block;
+                margin: 0 35px 0 0;
+
+                svg{
+                    width: 18px;
+                    height: 18px;
+                    margin-right: 0;
+                }
+                
+            }
+            @media screen and (max-width: 770px) {
+                margin-right: 15px;
+            }
+        }
+
     }
     
     //.menu__call__btn 
     &__call__btn {
+        @media screen and (max-width: 1020px){
+            width: 183px;
+            height: 33px;
+        }
+        @media screen and (max-width: 829px){
+            width: 210px;
+            height: 33px;
+        }
         span{
             @media screen and (max-width: 1020px){
-                font-size: 14px;
+                font-size: 18px;
+            }
+            @media screen and (max-width: 829px){
+                font-size: 20px;
             }
         }
     }
@@ -761,6 +832,9 @@ h4.title{
 
         @media screen and (max-width: 1020px){
             margin-right: 35px;
+        }
+        @media screen and (max-width: 770px) {
+            margin-right: 25px;
         }
 
         svg{
@@ -881,7 +955,7 @@ h4.title{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        max-width: 80px;
+        max-width: 110px;
         width: 100%;
     }
     .lang-item {
@@ -896,8 +970,8 @@ h4.title{
 
         .menu__lang__img{
             display: block;
-            width: 25px;
-            height: 25px;
+            width: 30px;
+            height: 30px;
             overflow: hidden;
             border-radius: 50%;
             border: 1px solid transparent;
@@ -960,7 +1034,10 @@ h4.title{
         background-position: -4% 0px;
     }
     @media screen and (max-width: 490px) {
-        background-position: 10% 0px;
+        background-position: 24% 0px;
+    }
+    @media screen and (max-width: 370px) {
+        background-position: 36% 0px;
     }
 
 
@@ -1094,6 +1171,10 @@ h4.title{
             max-width: unset;
             width: 465px;
             margin: 0 0 40px 0;
+
+            &:last-child{
+                margin-bottom: 0;
+            }
 
             span{
                 display: none;
@@ -1688,6 +1769,12 @@ h4.title{
     }
 
     //.blog-mini-content__title 
+    h3.blog-mini-content__title{
+        @media screen and (max-width: 610px) {
+            font-size: 18px;
+            line-height: 22px;
+        }
+    }
     &__title {
         cursor: pointer;
         margin-bottom: 5px;
@@ -1703,6 +1790,10 @@ h4.title{
         font-weight: 300;
         font-size: 14px;
         line-height: 24px;
+        @media screen and (max-width: 610px) {
+            font-size: 13px;
+            line-height: 20px;
+        }
     }
 }
 
@@ -2059,12 +2150,12 @@ h4.title{
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    margin-left: 30px;
+    //margin-left: 30px;
     margin-bottom: 30px;
 
     //.catalog-list__categories
     &.catalog-list__categories{
-        margin-left: 17px;
+        //margin-left: 17px;
         margin-bottom: 0;
     }
 
@@ -3560,6 +3651,13 @@ h4.title{
         font-weight: 400;
         font-size: 14px;
         line-height: 159.84%;
+
+        p{
+            &:first-child{
+                margin-bottom: 10px;
+            }
+        }
+
         @media screen and (max-width: 770px) {
             display: none;
         }
@@ -3570,10 +3668,23 @@ h4.title{
         display: none;
 
         @media screen and (max-width: 770px) {
-            display: block;
+            display: flex;
             font-weight: 400;
             font-size: 14px;
             line-height: 159.84%;
+            p{
+                &:first-child{
+                    margin-right: 25px;
+                }
+            }
+        }
+        @media screen and (max-width: 545px) {
+            flex-direction: column;
+            p{
+                &:first-child{
+                    margin-right: 0px;
+                }
+            }
         }
     }
 }
