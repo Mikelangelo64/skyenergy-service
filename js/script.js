@@ -184,7 +184,7 @@ $(document).ready(function(){
                 slidesPerView: 1,
                 grid: {
                     fill: 'row',
-                    rows: 4
+                    rows: 20
                 },
                 spaceBetween: 18,
             },
@@ -220,6 +220,30 @@ $(document).ready(function(){
         //freeMode: false,
     })
 
-    
+
+
+     //for-customer change article
+     $('.for-customer-menu .for-customer-menu__item').click(function(event){
+        onCustomerMenuClick.call(this, event);
+    })
+
+    function onCustomerMenuClick(event){
+        console.log(1, this);
+        //const menuLink = event.target;
+	    const goto = $(this).attr('data-article-appear');
+        console.log(2, $(goto));
+        if(goto && $(goto)){
+            $(this).addClass("_active-article");
+            $($(goto)).addClass("_active-article");
+
+            $($(goto)).fadeIn(200);
+
+            $('.for-customer-menu .for-customer-menu__item').not($(this)).removeClass("_active-article");
+            $('.for-customer__article__container .for-customer-article').not($(goto)).removeClass("_active-article");
+            $('.for-customer__article__container .for-customer-article').not($(goto)).fadeOut(200)
+        }
+
+        event.preventDefault();
+    }
 
 })
