@@ -223,10 +223,13 @@ $(document).ready(function(){
 
 
      //for-customer change article
+
+     $('.for-customer__article__container .for-customer-article').not($('.for-customer__article__container .for-customer-article._active-article ')).fadeOut(200)
+
      $('.for-customer-menu .for-customer-menu__item').click(function(event){
         onCustomerMenuClick.call(this, event);
     })
-
+ 
     function onCustomerMenuClick(event){
         console.log(1, this);
         //const menuLink = event.target;
