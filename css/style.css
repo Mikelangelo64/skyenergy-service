@@ -211,6 +211,13 @@ input, select, textarea {
       box-shadow: 1px 1px 24px 4px rgba(47,49,50,0.61);
   } */
 }
+@media screen and (max-width: 690px) {
+  input, select, textarea {
+    font-size: 12px;
+    padding: 6px 17px;
+    height: 32px;
+  }
+}
 input::-webkit-input-placeholder, select::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   color: rgba(5, 1, 9, 0.439);
 }
@@ -1239,6 +1246,11 @@ textarea {
   background-color: #EDF4F9;
   padding: 13px;
 }
+@media screen and (max-width: 690px) {
+  .form-search input {
+    height: 33px;
+  }
+}
 @media screen and (max-width: 540px) {
   .form-search input {
     -webkit-box-flex: 0;
@@ -1254,6 +1266,11 @@ textarea {
   border-bottom-right-radius: 3px;
   border-top-right-radius: 3px;
   background-color: #EDF4F9;
+}
+@media screen and (max-width: 690px) {
+  .form-search button[type=submit] {
+    height: 33px;
+  }
 }
 
 .call-container {
@@ -1689,6 +1706,13 @@ textarea {
 .pop-up._avtive-pop-up {
   top: 0;
 }
+@media screen and (max-width: 690px) {
+  .pop-up {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+}
 .pop-up__close__btn {
   position: absolute;
   top: 0;
@@ -1737,6 +1761,7 @@ textarea {
 @media screen and (max-width: 690px) {
   .pop-up__wrapper {
     max-width: 320px;
+    margin-bottom: 20px;
   }
 }
 @media screen and (max-width: 350px) {
@@ -1801,6 +1826,11 @@ textarea {
   text-align: center;
   color: #FFFFFF;
 }
+@media screen and (max-width: 690px) {
+  .pop-up__close__label {
+    top: -36px;
+  }
+}
 @media screen and (max-width: 350px) {
   .pop-up__close__label {
     right: 2px;
@@ -1821,10 +1851,12 @@ textarea {
 }
 .pop-up__content {
   overflow: auto;
+  max-height: 354px;
+  padding-right: 20px;
 }
 @media screen and (max-width: 690px) {
   .pop-up__content {
-    max-height: 380px;
+    max-height: 285px;
   }
 }
 .pop-up__title {
@@ -1845,6 +1877,11 @@ textarea {
     margin-bottom: 30px;
   }
 }
+@media screen and (max-width: 690px) {
+  .pop-up__title {
+    font-size: 16px;
+  }
+}
 .pop-up__subtitle {
   font-weight: 700;
   font-size: 16px;
@@ -1858,6 +1895,12 @@ textarea {
     font-size: 20px;
     line-height: 111%;
     margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 690px) {
+  .pop-up__subtitle {
+    font-size: 16px;
+    margin-bottom: 18px;
   }
 }
 
@@ -1888,6 +1931,7 @@ textarea {
         -ms-flex: unset;
             flex: unset;
     margin-bottom: 6px;
+    font-size: 12px;
   }
 }
 .pop-up-form div {
@@ -2847,6 +2891,7 @@ textarea {
   background-color: #4CB65D;
 }
 .product-card__img {
+  display: block;
   max-width: 150px;
   width: 100%;
   margin: 0 auto;
@@ -5646,7 +5691,7 @@ textarea {
   color: #3A1047;
 }
 .contacts__map__container {
-  border-radius: 10px;
+  border-radius: 5px;
   overflow: hidden;
 }
 .contacts__map__container iframe {
@@ -6592,6 +6637,7 @@ textarea {
   border: 1px solid transparent;
 }
 .for-customer .for-customer-menu__item p {
+  cursor: pointer;
   font-weight: 400;
   font-size: 14px;
   line-height: 22px;
